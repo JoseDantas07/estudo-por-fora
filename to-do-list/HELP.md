@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'simple.to-do-list' is invalid and this project uses 'simple.to_do_list' instead.
+* The original package name 'To-do-list' is invalid and this project uses 'To_do_list' instead.
 
 # Getting Started
 
@@ -12,7 +12,6 @@ For further reference, please consider the following sections:
 * [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/3.5.4/gradle-plugin)
 * [Create an OCI image](https://docs.spring.io/spring-boot/3.5.4/gradle-plugin/packaging-oci-image.html)
 * [Spring Data JPA](https://docs.spring.io/spring-boot/3.5.4/reference/data/sql.html#data.sql.jpa-and-spring-data)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/3.5.4/reference/using/devtools.html)
 * [Spring Web](https://docs.spring.io/spring-boot/3.5.4/reference/web/servlet.html)
 
 ### Guides
