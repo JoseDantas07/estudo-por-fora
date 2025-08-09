@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a593aef1-6415-4a59-8a96-871c313ffd9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../to-do-list/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/src/main/java/simple/to_do_list/ToDoListApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/src/main/java/simple/to_do_list/controller/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/src/main/java/simple/to_do_list/entity/TaskEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/src/main/java/simple/to_do_list/exception/IdNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/src/main/java/simple/to_do_list/repository/TaskRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/src/main/java/simple/to_do_list/service/TaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/src/main/java/simple/to_do_list/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../to-do-list/src/test/java/simple/to_do_list/ToDoListApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viaCep/src/main/java/estudosPorFora/viaCep/model/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="a593aef1-6415-4a59-8a96-871c313ffd9d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
