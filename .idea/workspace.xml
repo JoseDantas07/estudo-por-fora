@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1de35b7-b1db-41ec-9796-11c4fbe6a99c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/to-do-list/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/to-do-list/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/to-do-list/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/to-do-list/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/to-do-list/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/to-do-list/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/to-do-list/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/to-do-list/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/to-do-list/src/main/java/To_do_list/ToDoListApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/to-do-list/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/to-do-list/src/test/java/To_do_list/ToDoListApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.gradle/8.14.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/to-do-list/.gradle/8.14.3/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.gradle/8.14.3/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.gradle/8.14.3/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.gradle/8.14.3/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.gradle/8.14.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/to-do-list/.gradle/8.14.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.gradle/8.14.3/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.gradle/8.14.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/to-do-list/.gradle/8.14.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.gradle/8.14.3/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/to-do-list/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/to-do-list/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/to-do-list/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/classes/java/main/simple/to_do_list/ToDoListApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/classes/java/main/simple/to_do_list/controller/TaskController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/classes/java/main/simple/to_do_list/entity/TaskEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/classes/java/main/simple/to_do_list/exception/IdNotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/classes/java/main/simple/to_do_list/repository/TaskRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/classes/java/main/simple/to_do_list/service/TaskService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/classes/java/main/simple/to_do_list/service/impl/TaskServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/tmp/compileJava/compileTransaction/stash-dir/ResourceNotFoundException.class.uniqueId2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/tmp/compileJava/compileTransaction/stash-dir/TaskController.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/tmp/compileJava/compileTransaction/stash-dir/TaskService.class.uniqueId3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/tmp/compileJava/compileTransaction/stash-dir/TaskServiceImpl.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/to-do-list/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-    </list>
+    <list default="true" id="c1de35b7-b1db-41ec-9796-11c4fbe6a99c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
