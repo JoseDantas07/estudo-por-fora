@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1de35b7-b1db-41ec-9796-11c4fbe6a99c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/To-do-list.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/querrySql.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/querrySql/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
