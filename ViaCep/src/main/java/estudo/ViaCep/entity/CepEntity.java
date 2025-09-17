@@ -26,6 +26,6 @@ public class CepEntity {
     @Column(name = "locality")
     private String localidade;
 
-    @OneToMany(mappedBy = "addressId")
+    @OneToMany(mappedBy = "cepFk",cascade = CascadeType.ALL)
     List<AddressEntity> addressEntity;
 }

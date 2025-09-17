@@ -25,6 +25,6 @@ public class UserEntity {
     @Column(nullable = false,name = "age")
     private int age;
 
-    @OneToMany(mappedBy = "addressId")
+    @OneToMany(mappedBy = "userFk" , cascade = CascadeType.ALL)
     List<AddressEntity> addressEntities;
 }

@@ -12,12 +12,12 @@ public class AddressEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID addressId;
 
-    @ManyToOne
-    @JoinColumn(name = "userId")
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "userFk")
     private UserEntity userFk;
 
     @ManyToOne
-    @JoinColumn(name = "cepId")
+    @JoinColumn(name = "cepFk")
     private CepEntity cepFk;
 
     @Column(name = "number",nullable = false)
