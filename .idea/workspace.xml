@@ -5,58 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1de35b7-b1db-41ec-9796-11c4fbe6a99c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ViaCep/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/Dto/request/CepRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/ViaCepApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/entity/AddressEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/entity/CepEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/repository/AddressRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/repository/CepRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/url/ViaCepUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ViaCep/src/test/java/estudo/ViaCep/ViaCepEntityApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/client/BrapiClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/controller/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/controller/StockController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/dto/request/AssociateAccountStocksDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/dto/request/CreateAccountDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/dto/request/CreateStockDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/dto/request/CreateUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/dto/request/StockDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/dto/request/UpdateUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/dto/response/AccountResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/dto/response/AccountStockResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/dto/response/BrapiResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/entity/AccountEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/entity/AccountStockEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/entity/AccountStockIdEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/entity/BillingAddressEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/entity/StockEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/repository/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/repository/AccountStockRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/repository/BillingAddressRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/repository/StockRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/service/StockService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/service/impl/StockServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/test/java/estudos/agregadoInvestimentos/service/impl/UserServiceImplTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/.gitattributes" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/build.gradle.kts" afterDir="false" />
@@ -73,16 +21,6 @@
       <change afterPath="$PROJECT_DIR$/productRegistration2/src/main/java/estudos/productRegistration/service/impl/ProductsServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/src/test/java/estudos/productRegistration/ProductRegistrationApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringZip/To-do-list.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringZip/agregadoInvestimentos.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringZip/productRegistration.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringZip/querrySql.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringZip/sistemaCadastro.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agregadoInvestimentos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/agregadoInvestimentos/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/AgregadoInvestimentosApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/java/estudos/agregadoInvestimentos/AgregadoInvestimentosApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agregadoInvestimentos/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/agregadoInvestimentos/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

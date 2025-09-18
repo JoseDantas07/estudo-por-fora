@@ -4,4 +4,4 @@ import estudo.ViaCep.entity.AddressEntity;
 
 import java.util.List;
 
-public record UserAddressResponseDto(String name , List<AddressEntity> address) { }
+public record UserResponseDto(String name , List<AddressEntity> address) { }

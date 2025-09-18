@@ -9,15 +9,15 @@ import java.util.UUID;
 public class AddressEntity {
     @Id
     @Column(name = "addressId")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID addressId;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "userFk")
+    @JoinColumn(name = "userFk", nullable = false)
     private UserEntity userFk;
 
     @ManyToOne
-    @JoinColumn(name = "cepFk")
+    @JoinColumn(name = "cepFk", nullable = false)
     private CepEntity cepFk;
 
     @Column(name = "number",nullable = false)

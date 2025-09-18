@@ -1,13 +1,14 @@
 package estudo.ViaCep.service;
 
 import estudo.ViaCep.Dto.request.UserRequestDto;
-import estudo.ViaCep.Dto.response.UserAddressResponseDto;
+import estudo.ViaCep.Dto.response.UserResponseDto;
 
+import java.util.Optional;
 import java.util.UUID;
 
 public interface UserService {
 
-void createUser(UserRequestDto userRequestDto);
+UUID createUser(UserRequestDto userRequestDto);
 
-UserAddressResponseDto getUserWithAddress(UUID userId);
+UserResponseDto getUserById(String userId);
 }

@@ -16,14 +16,14 @@ import java.util.UUID;
 public class UserEntity {
     @Id
     @Column(name = "userId")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID userId;
 
     @Column(nullable = false,name = "name")
     private String name;
 
     @Column(nullable = false,name = "age")
-    private int age;
+    private Integer age;
 
     @OneToMany(mappedBy = "userFk" , cascade = CascadeType.ALL)
     List<AddressEntity> addressEntities;

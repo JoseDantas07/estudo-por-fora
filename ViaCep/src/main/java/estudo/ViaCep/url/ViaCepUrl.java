@@ -1,6 +1,6 @@
 package estudo.ViaCep.url;
 
-import estudo.ViaCep.Dto.request.CepRequestDto;
+import estudo.ViaCep.Dto.request.CepFullRequestDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,5 +8,5 @@ import org.springframework.web.bind.annotation.*;
 
 public interface ViaCepUrl {
     @GetMapping(value = "/{cepId}/json/")
-    CepRequestDto getZipCodeInformation(@PathVariable String cepId);
+    CepFullRequestDto getCepInformation(@PathVariable String cepId);
 }
