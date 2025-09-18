@@ -18,7 +18,7 @@ public class UserController {
     UserServiceImpl userService;
 
     @PostMapping
-    ResponseEntity<UserEntity> createUser(@RequestBody UserRequestDto userRequestDto){
+    ResponseEntity<UserRequestDto> createUser(@RequestBody UserRequestDto userRequestDto){
         var user = userService.createUser(userRequestDto);
         return ResponseEntity.created(URI.create("user/" + user.toString())).build();
     }

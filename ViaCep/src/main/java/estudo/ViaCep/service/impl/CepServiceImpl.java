@@ -28,20 +28,20 @@ public class CepServiceImpl implements CepService {
     @Override
     public void createCep(String cep) {
 
-        var cepFormated = checkscepServiceImpl.checkCep(cep);
+        var formattedCep = checkscepServiceImpl.checkCep(cep);
 
-        var cepFound = viaCepUrl.getCepInformation(cepFormated);
+        var cepFound = viaCepUrl.getCepInformation(formattedCep);
 
-        var cepFull = new CepEntity(cepFormated, cepFound.logradouro(), cepFound.bairro(), cepFound.localidade(), null);
+        var cepFull = new CepEntity(formattedCep, cepFound.logradouro(), cepFound.bairro(), cepFound.localidade(), null);
 
         cepRepository.save(cepFull);
     }
 
     @Override
     public CepFullResponseDto getCepById(String cep) {
-        var cepFormated = checkscepServiceImpl.checkCep(cep);
+        var formattedCep = checkscepServiceImpl.checkCep(cep);
 
-        var cepFound = cepRepository.findById(cepFormated);
+        var cepFound = cepRepository.findById(formattedCep);
 
         return cepFound.map(x -> new CepFullResponseDto(x.getCepId(), x.getLogradouro(), x.getBairro(),x.getLocalidade())).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"Cep nao encontrado"));
     }

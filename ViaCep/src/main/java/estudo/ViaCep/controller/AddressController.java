@@ -26,7 +26,7 @@ public class AddressController {
     AddressServiceImpl addressService;
 
     @PostMapping("/{userId}")
-    ResponseEntity<AddressEntity> createAddress(@PathVariable String userId, @RequestBody AddressRequestDto addressRequestDto){
+    ResponseEntity<AddressRequestDto> createAddress(@PathVariable String userId, @RequestBody AddressRequestDto addressRequestDto){
         var address = addressService.createAddress(userId,addressRequestDto);
         return ResponseEntity.created(URI.create("address/" + address.toString())).build();
     }

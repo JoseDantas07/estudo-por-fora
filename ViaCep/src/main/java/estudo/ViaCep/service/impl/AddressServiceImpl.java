@@ -34,8 +34,8 @@ public class AddressServiceImpl implements AddressService {
     public UUID createAddress(String userId,AddressRequestDto addressRequestDto) {
         var user = userRepository.findById(UUID.fromString(userId)).orElseThrow(() -> {return new ResponseStatusException(HttpStatus.NOT_FOUND,"Id nao encontrado");
         });
-        var cepFormated = checkCepService.checkCep(addressRequestDto.cepId());
-        var cep = cepRepository.findById(cepFormated).orElseThrow(() -> {return new ResponseStatusException(HttpStatus.NOT_FOUND,"Cep Nao encontrado");});
+        var formattedCep = checkCepService.checkCep(addressRequestDto.cepId());
+        var cep = cepRepository.findById(formattedCep).orElseThrow(() -> {return new ResponseStatusException(HttpStatus.NOT_FOUND,"Cep Nao encontrado");});
 
         var address = addressRepository.save(new AddressEntity(null,user,cep, addressRequestDto.number(), addressRequestDto.type(), addressRequestDto.description()));
 
