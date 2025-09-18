@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.ArrayList;
-import java.util.Optional;
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -38,6 +38,29 @@ public class UserServiceImpl implements UserService {
         var user = userRepository.findById(UUID.fromString((userId)));
 
         return user.map(x-> new UserResponseDto(x.getName(), x.getAddressEntities())).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"Usuario nao encontrado"));
+    }
+
+    @Override
+    public List<UserEntity> getAllUsers() {
+        return userRepository.findAll();
+    }
+
+    @Override
+    public void updateUserById(String userId, UserRequestDto userRequestDto) {
+        userRepository.findById(UUID.fromString(userId)).ifPresentOrElse(x -> {
+            if (userRequestDto.name() != null){
+                x.setName(userRequestDto.name());
+            }
+            if (userRequestDto.age() != null){
+                x.setAge(userRequestDto.age());
+            }
+            userRepository.save(x);
+        }, () -> {throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Id Nao encontrado");});
+    }
+
+    @Override
+    public void deleteUserById(String userid) {
+        userRepository.deleteById(UUID.fromString(userid));
     }
 
 

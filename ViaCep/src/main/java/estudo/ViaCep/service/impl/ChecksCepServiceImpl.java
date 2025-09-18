@@ -27,7 +27,7 @@ public class ChecksCepServiceImpl {
 
         var cepFound = viaCepUrl.getCepInformation(cep);
 
-        if (cepFound.localidade().isEmpty()){
+        if (cepFound.localidade() == null){
             throw  new ResponseStatusException(HttpStatus.NOT_FOUND,"Cep invalido");
         }
 

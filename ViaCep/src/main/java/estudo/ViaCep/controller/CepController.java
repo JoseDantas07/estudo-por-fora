@@ -38,10 +38,8 @@ public class CepController {
     @GetMapping("/all")
     ResponseEntity<List<CepFullResponseDto>> getAllCep(){
         var cep = cepService.getAllCep();
-
         return ResponseEntity.ok(cep);
     }
-
 
     @DeleteMapping("/{cepId}/cep")
     ResponseEntity<Void> deleteCepById(@PathVariable String cepId){
