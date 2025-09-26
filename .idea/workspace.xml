@@ -5,6 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1de35b7-b1db-41ec-9796-11c4fbe6a99c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ViaCep/.$Diagrama sem nome.drawio.bkp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/Diagrama sem nome.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/ViaCep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/Dto/request/AddressRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/Dto/request/CepFullRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/Dto/request/CepRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/Dto/request/UpdateAddressRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/Dto/request/UserRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/Dto/response/AddressResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/Dto/response/CepFullResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/Dto/response/UserResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/ViaCepApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/controller/AddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/controller/CepController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/entity/AddressEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/entity/CepEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/repository/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/repository/CepRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/service/CepService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/service/impl/CepServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/service/impl/ChecksCepServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/url/ViaCepUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ViaCep/src/test/java/estudo/ViaCep/ViaCepEntityApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/.gitattributes" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/build.gradle.kts" afterDir="false" />
@@ -21,11 +62,19 @@
       <change afterPath="$PROJECT_DIR$/productRegistration2/src/main/java/estudos/productRegistration/service/impl/ProductsServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/src/test/java/estudos/productRegistration/ProductRegistrationApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViaCep.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemaCadastro/src/main/java/estudo/sistemaCadastro/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemaCadastro/src/main/java/estudo/sistemaCadastro/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistemaCadastro/src/main/java/estudo/sistemaCadastro/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemaCadastro/src/main/java/estudo/sistemaCadastro/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,7 +88,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/JoseDantas07/estudo-por-fora.git&quot;,
-    &quot;accountId&quot;: &quot;9751ffae-eed4-4c0d-b9d4-a408cfd89883&quot;
+    &quot;accountId&quot;: &quot;039cb1d9-a2e7-42c9-9788-7ba675651f1c&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -56,8 +105,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/josed/OneDrive/josetrabalho/estudo-por-fora&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ze/Desktop/OneDrive/josetrabalho/estudo-por-fora&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
   <component name="TaskManager">

@@ -2,7 +2,6 @@ package estudo.sistemaCadastro.controller;
 
 import estudo.sistemaCadastro.entity.UserEntity;
 import estudo.sistemaCadastro.service.impl.UserServiceImpl;
-import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/user")
