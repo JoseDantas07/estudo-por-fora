@@ -46,6 +46,27 @@
       <change afterPath="$PROJECT_DIR$/ViaCep/src/main/java/estudo/ViaCep/url/ViaCepUrl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ViaCep/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ViaCep/src/test/java/estudo/ViaCep/ViaCepEntityApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/main/java/estudo/picpay/PicpayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/main/java/estudo/picpay/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/main/java/estudo/picpay/dto/request/CreateUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/main/java/estudo/picpay/entity/TransactionEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/main/java/estudo/picpay/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/main/java/estudo/picpay/entity/UserType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/main/java/estudo/picpay/exception/CpfOrCnpjException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/main/java/estudo/picpay/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/main/java/estudo/picpay/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/main/java/estudo/picpay/service/impl/Checks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/main/java/estudo/picpay/service/impl/UserServiceimpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/picpay/src/test/java/estudo/picpay/PicpayApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/.gitattributes" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/build.gradle.kts" afterDir="false" />
@@ -62,11 +83,7 @@
       <change afterPath="$PROJECT_DIR$/productRegistration2/src/main/java/estudos/productRegistration/service/impl/ProductsServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/productRegistration2/src/test/java/estudos/productRegistration/ProductRegistrationApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ViaCep.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemaCadastro/src/main/java/estudo/sistemaCadastro/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemaCadastro/src/main/java/estudo/sistemaCadastro/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sistemaCadastro/src/main/java/estudo/sistemaCadastro/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sistemaCadastro/src/main/java/estudo/sistemaCadastro/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
