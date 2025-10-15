@@ -1,7 +1,7 @@
 package estudo.picpay.service.impl;
 
-import estudo.picpay.dto.request.CreateUserDto;
-import estudo.picpay.dto.request.DepositDto;
+import estudo.picpay.dto.request.CreateUserRequestDto;
+import estudo.picpay.dto.request.DepositRequestDto;
 import estudo.picpay.entity.UserEntity;
 import estudo.picpay.repository.UserRepository;
 import estudo.picpay.service.UserService;
@@ -25,7 +25,7 @@ public class UserServiceimpl implements UserService {
     Checks checks;
 
     @Override
-    public UUID CreateUser(CreateUserDto createClientDto) {
+    public UUID CreateUser(CreateUserRequestDto createClientDto) {
 
         var chekccpfOrCnpj= checks.chekccpfOrCnpj(createClientDto.cpfOrCnpj());
 
@@ -39,7 +39,7 @@ public class UserServiceimpl implements UserService {
     }
 
     @Override
-    public void deposit(DepositDto depositDto) {
+    public void deposit(DepositRequestDto depositDto) {
         userRepository.findById(depositDto.userId()).ifPresentOrElse(x -> {
             x.setBalance(depositDto.amount());
             userRepository.save(x);

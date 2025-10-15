@@ -1,7 +1,7 @@
 package estudo.picpay.controller;
 
-import estudo.picpay.dto.request.CreateUserDto;
-import estudo.picpay.dto.request.DepositDto;
+import estudo.picpay.dto.request.CreateUserRequestDto;
+import estudo.picpay.dto.request.DepositRequestDto;
 import estudo.picpay.entity.UserEntity;
 import estudo.picpay.service.impl.UserServiceimpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,7 @@ public class UserController {
     UserServiceimpl userServiceimpl;
 
     @PostMapping("/user")
-    public ResponseEntity<UUID> createCommonUser(@RequestBody CreateUserDto createUserDto){
+    public ResponseEntity<UUID> createCommonUser(@RequestBody CreateUserRequestDto createUserDto){
         var commonUser = userServiceimpl.CreateUser(createUserDto);
         return ResponseEntity.created(URI.create("user/" + commonUser.toString())).build();
     }
@@ -35,7 +35,7 @@ public class UserController {
     }
 
     @PutMapping("/user/deposit")
-    public ResponseEntity<Void> deposit(@RequestBody DepositDto depositDto){
+    public ResponseEntity<Void> deposit(@RequestBody DepositRequestDto depositDto){
         userServiceimpl.deposit(depositDto);
         return ResponseEntity.ok().build();
     }

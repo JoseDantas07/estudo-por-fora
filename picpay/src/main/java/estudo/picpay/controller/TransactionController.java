@@ -1,13 +1,14 @@
 package estudo.picpay.controller;
 
-import estudo.picpay.dto.request.SenderDto;
+import estudo.picpay.dto.request.SenderRequestDto;
+import estudo.picpay.dto.response.TransactionResponseDto;
+import estudo.picpay.entity.TransactionEntity;
 import estudo.picpay.service.impl.TransactionServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/transaction")
@@ -17,8 +18,13 @@ public class TransactionController {
     TransactionServiceImpl transactionService;
 
     @PostMapping
-    public ResponseEntity<Void> sender(@RequestBody SenderDto senderDto){
+    public ResponseEntity<Void> sender(@RequestBody SenderRequestDto senderDto){
         transactionService.sender(senderDto);
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/transactions")
+    public ResponseEntity<List<TransactionResponseDto>> getALlTransaction(){
+        return ResponseEntity.ok(transactionService.getAllTransaction());
     }
 }

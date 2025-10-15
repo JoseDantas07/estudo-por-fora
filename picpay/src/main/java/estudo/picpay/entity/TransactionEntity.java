@@ -1,5 +1,8 @@
 package estudo.picpay.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,10 +20,10 @@ import java.time.Instant;
 import java.util.UUID;
 
 @Entity
+@Table(name = "transaction")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "transaction")
 public class TransactionEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -34,9 +37,11 @@ public class TransactionEntity {
 
     @ManyToOne
     @JoinColumn(name = "senderId")
+    @JsonBackReference
     private UserEntity sender;
 
     @ManyToOne
     @JoinColumn(name = "receiverId")
+    @JsonBackReference
     private UserEntity receiver;
 }

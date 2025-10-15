@@ -1,6 +1,7 @@
 package estudo.picpay.service.impl;
 
-import estudo.picpay.dto.request.SenderDto;
+import estudo.picpay.dto.request.SenderRequestDto;
+import estudo.picpay.dto.response.TransactionResponseDto;
 import estudo.picpay.entity.TransactionEntity;
 import estudo.picpay.repository.TransactionRepository;
 import estudo.picpay.repository.UserRepository;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.time.Instant;
+import java.util.List;
 
 @Service
 public class TransactionServiceImpl implements TransactionService {
@@ -24,7 +26,7 @@ public class TransactionServiceImpl implements TransactionService {
     TransactionRepository  transactionRepository;
 
     @Override
-    public void sender(SenderDto senderDto) {
+    public void sender(SenderRequestDto senderDto) {
 
         var sender =  userRepository.findById(senderDto.senderId()).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"Id não encontrado /" +senderDto.senderId()));
 
@@ -40,5 +42,14 @@ public class TransactionServiceImpl implements TransactionService {
         userRepository.save(receiver);
 
         transactionRepository.save(new TransactionEntity(null, Instant.now(),senderDto.amount(),sender,receiver));
+    }
+
+    @Override
+    public List<TransactionResponseDto> getAllTransaction() {
+        var transaction = transactionRepository.findAll();
+        if (transaction.isEmpty()){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND,"A lista esta vazia");
+        }
+        return transaction.stream().map(x -> new TransactionResponseDto(x.getTransactionId(),x.getSender(),x.getReceiver(),x.getTime(),x.getAmount())).toList();
     }
 }

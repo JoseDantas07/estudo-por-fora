@@ -1,5 +1,8 @@
 package estudo.picpay.entity;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -39,10 +42,12 @@ public class UserEntity{
     @Column(name = "balance")
     protected BigDecimal balance;
 
-    @OneToMany(mappedBy = "sender")
+    @OneToMany(mappedBy = "sender",fetch = FetchType.LAZY)
+    @JsonManagedReference
     private List<TransactionEntity> senderTransaction;
 
-    @OneToMany(mappedBy = "receiver")
+    @OneToMany(mappedBy = "receiver",fetch = FetchType.LAZY)
+    @JsonManagedReference
     private List<TransactionEntity> receiverTransaction;
 
 }
