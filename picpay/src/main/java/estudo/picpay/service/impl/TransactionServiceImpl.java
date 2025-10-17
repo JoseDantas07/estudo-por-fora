@@ -1,6 +1,7 @@
 package estudo.picpay.service.impl;
 
 import estudo.picpay.Url.AuthorizePayment;
+import estudo.picpay.dto.request.ReturnRequestDto;
 import estudo.picpay.dto.request.SenderRequestDto;
 import estudo.picpay.dto.response.TransactionResponseDto;
 import estudo.picpay.entity.TransactionEntity;
@@ -12,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.List;
 
@@ -51,7 +53,7 @@ public class TransactionServiceImpl implements TransactionService {
         userRepository.save(sender);
         userRepository.save(receiver);
 
-        transactionRepository.save(new TransactionEntity(null, Instant.now(),senderDto.amount(),sender,receiver));
+        transactionRepository.save(new TransactionEntity(null, Instant.now(),senderDto.amount(),false,sender,receiver));
     }
 
     @Override
@@ -60,6 +62,33 @@ public class TransactionServiceImpl implements TransactionService {
         if (transaction.isEmpty()){
             throw new ResponseStatusException(HttpStatus.NOT_FOUND,"A lista esta vazia");
         }
-        return transaction.stream().map(x -> new TransactionResponseDto(x.getTransactionId(),x.getSender(),x.getReceiver(),x.getTime(),x.getAmount())).toList();
+        return transaction.stream().map(x -> new TransactionResponseDto(x.getTransactionId(),x.getSender(),x.getReceiver(),x.getTime(),x.getAmount(),x.isRefundOfPayment())).toList();
+    }
+
+    @Override
+    public void RefundOfPayment(ReturnRequestDto returnRequestDto) {
+
+        var transaction = transactionRepository.findById(returnRequestDto.transactionId()).orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND,"Transação não encontrada" + returnRequestDto.transactionId()));
+
+        if (transaction.isRefundOfPayment()){
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Essa transação ja foi devolvida");
+        }
+
+        var senderId = userRepository.findById(returnRequestDto.senderId()).orElseThrow(() ->  new ResponseStatusException(HttpStatus.NOT_FOUND,"Id não encotnrado" + returnRequestDto.senderId()));
+
+        var receiverId = userRepository.findById(returnRequestDto.receiverId()).orElseThrow(() ->new ResponseStatusException(HttpStatus.NOT_FOUND,"Id não encotnrado" + returnRequestDto.receiverId()));
+
+
+        BigDecimal money = transaction.getAmount();
+
+
+        senderId.setBalance(senderId.getBalance().add(money));
+        receiverId.setBalance(receiverId.getBalance().subtract(money));
+        transaction.setRefundOfPayment(true);
+
+        transactionRepository.save(transaction);
+        userRepository.save(senderId);
+        userRepository.save(receiverId);
+
     }
 }

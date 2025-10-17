@@ -1,5 +1,6 @@
 package estudo.picpay.service;
 
+import estudo.picpay.dto.request.ReturnRequestDto;
 import estudo.picpay.dto.request.SenderRequestDto;
 import estudo.picpay.dto.response.TransactionResponseDto;
 
@@ -10,4 +11,6 @@ public interface TransactionService {
     void sender(SenderRequestDto senderDto);
 
     List<TransactionResponseDto> getAllTransaction();
+
+    void RefundOfPayment(ReturnRequestDto returnRequestDto);
 }

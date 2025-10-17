@@ -1,5 +1,6 @@
 package estudo.picpay.controller;
 
+import estudo.picpay.dto.request.ReturnRequestDto;
 import estudo.picpay.dto.request.SenderRequestDto;
 import estudo.picpay.dto.response.TransactionResponseDto;
 import estudo.picpay.entity.TransactionEntity;
@@ -26,5 +27,11 @@ public class TransactionController {
     @GetMapping("/transactions")
     public ResponseEntity<List<TransactionResponseDto>> getALlTransaction(){
         return ResponseEntity.ok(transactionService.getAllTransaction());
+    }
+
+    @PostMapping("/refundOfPayment")
+    public ResponseEntity<Void> refundOfPayment(@RequestBody ReturnRequestDto returnRequestDto){
+        transactionService.RefundOfPayment(returnRequestDto);
+        return ResponseEntity.ok().build();
     }
 }

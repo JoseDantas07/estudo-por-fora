@@ -35,6 +35,10 @@ public class TransactionEntity {
     @Column(name = "amount")
     private BigDecimal amount;
 
+
+    @Column(name = "refundOfPayment")
+    private boolean refundOfPayment;
+
     @ManyToOne
     @JoinColumn(name = "senderId")
     @JsonBackReference
