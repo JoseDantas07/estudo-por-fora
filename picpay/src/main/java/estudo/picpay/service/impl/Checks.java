@@ -14,7 +14,6 @@ public class Checks {
     @Autowired
     UserRepository userRepository;
 
-
     public String chekccpfOrCnpj(String cpfOrCnpj){
 
         cpfOrCnpj = cpfOrCnpj.replace("-","").replace(".","").replace("/","").replace(" ", "");

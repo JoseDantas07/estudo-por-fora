@@ -1,5 +1,6 @@
 package estudo.picpay.service.impl;
 
+import estudo.picpay.Url.AuthorizePayment;
 import estudo.picpay.dto.request.SenderRequestDto;
 import estudo.picpay.dto.response.TransactionResponseDto;
 import estudo.picpay.entity.TransactionEntity;
@@ -25,6 +26,9 @@ public class TransactionServiceImpl implements TransactionService {
     @Autowired
     TransactionRepository  transactionRepository;
 
+    @Autowired
+    AuthorizePayment authorizePayment;
+
     @Override
     public void sender(SenderRequestDto senderDto) {
 
@@ -34,6 +38,12 @@ public class TransactionServiceImpl implements TransactionService {
         checks.verifyMoney(sender,senderDto.amount());
 
         var receiver = userRepository.findById(senderDto.receiverId()).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"Id não encontrado /" +senderDto.receiverId()));
+
+        var authorize = authorizePayment.authorizeRequestDtos();
+
+        if ( authorize.status().isEmpty() || !authorize.status().equalsIgnoreCase("success")){
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"requisição não autorizada");
+        }
 
         sender.setBalance(sender.getBalance().subtract(senderDto.amount()));
         receiver.setBalance(receiver.getBalance().add(senderDto.amount()));
