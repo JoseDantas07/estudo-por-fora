@@ -20,16 +20,16 @@ import java.util.List;
 @Service
 public class TransactionServiceImpl implements TransactionService {
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     @Autowired
-    Checks checks;
+    private Checks checks;
 
     @Autowired
-    TransactionRepository  transactionRepository;
+    private TransactionRepository  transactionRepository;
 
     @Autowired
-    AuthorizePayment authorizePayment;
+    private AuthorizePayment authorizePayment;
 
     @Override
     public void sender(SenderRequestDto senderDto) {

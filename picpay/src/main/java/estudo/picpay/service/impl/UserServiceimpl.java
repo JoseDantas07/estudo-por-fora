@@ -19,10 +19,10 @@ import java.util.UUID;
 public class UserServiceimpl implements UserService {
 
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     @Autowired
-    Checks checks;
+    private Checks checks;
 
     @Override
     public UUID CreateUser(CreateUserRequestDto createClientDto) {

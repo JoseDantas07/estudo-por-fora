@@ -21,7 +21,7 @@ import java.util.UUID;
 @RequestMapping("/users")
 public class UserController {
     @Autowired
-    UserServiceimpl userServiceimpl;
+    private UserServiceimpl userServiceimpl;
 
     @PostMapping("/user")
     public ResponseEntity<UUID> createCommonUser(@RequestBody CreateUserRequestDto createUserDto){

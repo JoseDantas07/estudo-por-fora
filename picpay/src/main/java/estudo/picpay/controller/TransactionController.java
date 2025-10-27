@@ -3,7 +3,6 @@ package estudo.picpay.controller;
 import estudo.picpay.dto.request.ReturnRequestDto;
 import estudo.picpay.dto.request.SenderRequestDto;
 import estudo.picpay.dto.response.TransactionResponseDto;
-import estudo.picpay.entity.TransactionEntity;
 import estudo.picpay.service.impl.TransactionServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +15,7 @@ import java.util.List;
 public class TransactionController {
 
     @Autowired
-    TransactionServiceImpl transactionService;
+    private TransactionServiceImpl transactionService;
 
     @PostMapping
     public ResponseEntity<Void> sender(@RequestBody SenderRequestDto senderDto){

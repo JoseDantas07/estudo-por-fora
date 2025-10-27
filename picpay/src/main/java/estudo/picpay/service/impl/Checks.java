@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 @Service
 public class Checks {
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     public String chekccpfOrCnpj(String cpfOrCnpj){
 
