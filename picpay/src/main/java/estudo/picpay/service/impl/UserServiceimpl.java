@@ -41,7 +41,7 @@ public class UserServiceimpl implements UserService {
     @Override
     public void deposit(DepositRequestDto depositDto) {
         userRepository.findById(depositDto.userId()).ifPresentOrElse(x -> {
-            x.setBalance(depositDto.amount());
+            x.setBalance(x.getBalance().add(depositDto.amount()));
             userRepository.save(x);
         }, () -> {throw new ResponseStatusException(HttpStatus.NOT_FOUND,"Id não encontrado");});
     }

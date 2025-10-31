@@ -4,5 +4,5 @@ import estudo.picpay.entity.UserEntity;
 
 import java.util.UUID;
 
-public record ReturnRequestDto (UUID transactionId, UUID senderId,UUID receiverId){
+public record ReturnRequestDto (UUID transactionId){
 }

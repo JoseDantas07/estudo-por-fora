@@ -74,13 +74,11 @@ public class TransactionServiceImpl implements TransactionService {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Essa transação ja foi devolvida");
         }
 
-        var senderId = userRepository.findById(returnRequestDto.senderId()).orElseThrow(() ->  new ResponseStatusException(HttpStatus.NOT_FOUND,"Id não encotnrado" + returnRequestDto.senderId()));
+        var senderId = transaction.getSender();
 
-        var receiverId = userRepository.findById(returnRequestDto.receiverId()).orElseThrow(() ->new ResponseStatusException(HttpStatus.NOT_FOUND,"Id não encotnrado" + returnRequestDto.receiverId()));
-
+        var receiverId = transaction.getReceiver();
 
         BigDecimal money = transaction.getAmount();
-
 
         senderId.setBalance(senderId.getBalance().add(money));
         receiverId.setBalance(receiverId.getBalance().subtract(money));
